@@ -700,24 +700,30 @@ transform: translate(-50%, -50%);
 position: absolute;
 width: 30px;
 height: 30px;
-color: black;
 border-radius: 360px;
 border: 1px solid rgba(0, 0, 0, 0.1);
 background-color: #FFFFFF;
 right: 9px;
 top: 9px;
-font-size: 24px;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-button:hover, .modal-button:focus {
-    color: var(--accent-color);  
-}
-
 /* 6 ДОМВШНЯ РОБОТА */
 
 /* стилізація форм модалки */
+.modal-button:hover + .modal-button-icon {
+    fill: var(--accent-color);  
+} 
+.modal-button:focus + .modal-button-icon {
+    fill: var(--accent-color);  
+} 
+.modal-button-icon {
+    position: absolute;
+    left: 499px;
+    top: 19px;
+    pointer-events: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-text {
-padding-top: 40px;
+    margin-top: 40px;
 margin-bottom: 30px;
 font-weight: 700;
 font-size: 20px;
@@ -774,6 +780,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 16px;
     color: rgba(117, 117, 117, 0.5);
+    margin-bottom: 0px;
 }
 
 .form-element-svg {
@@ -813,7 +820,7 @@ color: rgba(33, 150, 243, 1);
 }
 .button-box {
     padding-left: 165px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .form-button {
 width: 200px;
@@ -821,6 +828,7 @@ height: 50px;
 text-align: center;
 font-size: 16px;
 line-height: 30px;
+margin-bottom: 40px;
 color: rgba(255, 255, 255, 1);
 background: rgba(33, 150, 243, 1);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
