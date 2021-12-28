@@ -929,6 +929,7 @@ letter-spacing: 1.9;
     left: 520px;
     width: 24px;
     height: 24px;
+    pointer-events: none;
 }
 .footer-label {
     font-weight: 700;
